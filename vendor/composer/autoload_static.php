@@ -21,6 +21,10 @@ class ComposerStaticInitb1ef404ee3566874164fa656c84f92c6
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
         ),
+        'H' => 
+        array (
+            'Hcode\\' => 6,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -36,10 +40,10 @@ class ComposerStaticInitb1ef404ee3566874164fa656c84f92c6
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
-    );
-
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/hcodebr/php-classes/src',
+        'Hcode\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hcodebr/php-classes/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -75,7 +79,6 @@ class ComposerStaticInitb1ef404ee3566874164fa656c84f92c6
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitb1ef404ee3566874164fa656c84f92c6::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitb1ef404ee3566874164fa656c84f92c6::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInitb1ef404ee3566874164fa656c84f92c6::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitb1ef404ee3566874164fa656c84f92c6::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitb1ef404ee3566874164fa656c84f92c6::$classMap;
 
